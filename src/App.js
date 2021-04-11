@@ -1,8 +1,16 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Card from './components/card/Card';
+import Login from './components/login/Login.jsx';
 
 function App() {
-  return <div>1234</div>;
+  return (
+    <div className="App">
+      <header className="App-header">
+        <Card />
+      </header>
+    </div>
+  );
 }
 
 export default App;
