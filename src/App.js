@@ -1,15 +1,20 @@
 import React from 'react';
 import './App.css';
+import { Route, Switch } from 'react-router-dom';
 import Card from './components/card/Card';
 import Login from './components/login/Login.jsx';
+import LayoutContainer from './containers/LayoutContainer';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
+    <Switch>
+      <Route exact path="/login">
+        <Login />
+      </Route>
+      <Route exact path="/card">
         <Card />
-      </header>
-    </div>
+      </Route>
+    </Switch>
   );
 }
 
